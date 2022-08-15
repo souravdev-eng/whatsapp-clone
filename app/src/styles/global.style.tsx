@@ -33,3 +33,5 @@ export const AppTextSemiBold = styled.Text`
   font-family: ${fonts_Family.SourceSansPro_SemiBold};
   color: ${colors.black};
 `;
+
+export const SignInButton = styled.TouchableOpacity``;

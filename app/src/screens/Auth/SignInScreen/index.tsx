@@ -2,32 +2,26 @@ import React from 'react';
 import {
   View,
   Image,
-  TextInput,
-  TouchableWithoutFeedback,
   Keyboard,
+  TextInput,
   TouchableOpacity,
-  SafeAreaView,
+  TouchableWithoutFeedback,
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import LinearGradient from 'react-native-linear-gradient';
-import {colors} from '../../constant/theme/colors';
-import {
-  WhatsappText,
-  AppTextSemiBold,
-  AppText,
-} from '../../styles/global.style';
-import styles from './styles';
-import Loader from '../../components/Loader';
 
-const AuthScreen = () => {
+import {colors} from '../../../constant/theme/colors';
+import {WhatsappText, AppTextSemiBold} from '../../../styles/global.style';
+import styles from './styles';
+
+const SignInScreen = () => {
   return (
     <>
       <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
         <View style={styles.container}>
-          <Loader />
           <View style={styles.logoContainer}>
             <Image
-              source={require('../../assets/images/logo.png')}
+              source={require('../../../assets/images/logo.png')}
               style={styles.logo}
             />
             <WhatsappText>WhatsUp</WhatsappText>
@@ -70,4 +64,4 @@ const AuthScreen = () => {
   );
 };
 
-export default AuthScreen;
+export default SignInScreen;

@@ -1,16 +1,18 @@
 import {StyleSheet} from 'react-native';
+import {theme} from '../../constant';
+const {HEIGHT, WIDTH} = theme;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     backgroundColor: '#000',
     opacity: 0.7,
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 1,
     position: 'absolute',
-    height: '100%',
-    width: '100%',
+    height: HEIGHT,
+    width: WIDTH,
   },
   loaderContainer: {
     width: 90,
@@ -22,6 +24,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     alignSelf: 'center',
     zIndex: 8,
+    top: '35%',
   },
 });
 
