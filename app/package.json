@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/react-native-vector-icons": "^6.4.11",
     "formik": "^2.2.9",
+    "lottie-react-native": "^5.1.4",
     "react": "18.0.0",
     "react-native": "0.69.4",
     "react-native-linear-gradient": "^2.6.2",
