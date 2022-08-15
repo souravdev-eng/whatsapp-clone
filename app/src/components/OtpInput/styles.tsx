@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {theme} from '../../constant';
-const {HEIGHT, WIDTH, colors} = theme;
+const {colors} = theme;
 
 const styles = StyleSheet.create({
   underlineStyleBase: {
@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
     color: '#000',
     backgroundColor: '#fff',
-    elevation: 2,
   },
 
   underlineStyleHighLighted: {

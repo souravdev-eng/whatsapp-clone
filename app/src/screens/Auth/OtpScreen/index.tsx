@@ -3,10 +3,10 @@ import {View, TouchableOpacity} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import LinearGradient from 'react-native-linear-gradient';
 
+import OtpInput from '../../../components/OtpInput';
 import {colors} from '../../../constant/theme/colors';
 import {AppTextSemiBold, AppText} from '../../../styles/global.style';
 import styles from './styles';
-import OtpInput from '../../../components/OtpInput';
 
 const OtpScreen = () => {
   return (
