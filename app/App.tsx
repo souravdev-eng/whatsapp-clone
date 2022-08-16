@@ -1,11 +1,10 @@
 import React from 'react';
-import OtpScreen from './src/screens/Auth/OtpScreen';
-import ChatScreen from './src/screens/Chat';
+import MainNavigation from './src/navigation/MainNavigation';
 
 const App = () => {
   return (
     <>
-      <ChatScreen />
+      <MainNavigation />
     </>
   );
 };

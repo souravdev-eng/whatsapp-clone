@@ -6,6 +6,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import {Row, AppTextSemiBold} from '../../styles/global.style';
 import {colors} from '../../constant/theme/colors';
 import styles from './styles';
+import ChatTopTabBar from '../../navigation/ChatTopTabBar';
 
 const ChatScreen = () => {
   return (
@@ -25,6 +26,7 @@ const ChatScreen = () => {
           </TouchableOpacity>
         </Row>
       </View>
+      <ChatTopTabBar />
     </>
   );
 };

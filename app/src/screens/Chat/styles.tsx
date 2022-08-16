@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 10,
-    paddingBottom: 16,
-    marginTop: StatusBar.currentHeight,
+    paddingVertical: 16,
+    backgroundColor: colors.white,
   },
   title: {
     fontSize: fonts_Size.h2,
