@@ -8,15 +8,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 10,
-    paddingVertical: 16,
+    paddingVertical: 10,
     backgroundColor: colors.white,
   },
   title: {
     fontSize: fonts_Size.h2,
   },
   iconBox: {
-    width: 50,
-    height: 50,
+    width: 35,
+    height: 35,
     backgroundColor: colors.lightGreen,
     borderRadius: 12,
     marginLeft: 16,

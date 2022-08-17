@@ -17,12 +17,12 @@ const ChatScreen = () => {
           <TouchableOpacity style={styles.iconBox}>
             <Ionicons
               name="ios-search-outline"
-              size={26}
+              size={22}
               color={colors.green}
             />
           </TouchableOpacity>
           <TouchableOpacity style={styles.iconBox}>
-            <Feather name="more-vertical" size={26} color={colors.green} />
+            <Feather name="more-vertical" size={22} color={colors.green} />
           </TouchableOpacity>
         </Row>
       </View>
