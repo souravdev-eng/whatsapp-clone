@@ -3,8 +3,9 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import ChatListScreen from '../screens/ChatListScreen';
 import StatusScreen from '../screens/StatusScreen';
 import CallScreen from '../screens/CallScreen';
-import {colors} from '../constant/theme/colors';
+
 import {fonts_Family, fonts_Size} from '../constant/theme/fonts';
+import {colors} from '../constant/theme/colors';
 
 const Tab = createMaterialTopTabNavigator();
 

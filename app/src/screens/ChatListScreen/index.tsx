@@ -1,7 +1,8 @@
-import {View, FlatList} from 'react-native';
 import React from 'react';
-import styles from './styles';
+import {View, FlatList, TouchableOpacity} from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import MessageCard from '../../components/MessageCard';
+import styles from './styles';
 
 const ChatListScreen = () => {
   return (
@@ -12,6 +13,9 @@ const ChatListScreen = () => {
         renderItem={({item}) => <MessageCard />}
         keyExtractor={(item, index) => index.toString()}
       />
+      <TouchableOpacity style={styles.newChatButton}>
+        <Ionicons name="md-chatbox-ellipses-sharp" size={28} color="white" />
+      </TouchableOpacity>
     </View>
   );
 };
