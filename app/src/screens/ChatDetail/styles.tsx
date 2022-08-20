@@ -4,36 +4,48 @@ const {colors, fonts_Family, HEIGHT, fonts_Size, WIDTH} = theme;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10,
+    paddingTop: 10,
+    backgroundColor: colors.white,
+    flex: 1,
+    // paddingBottom: '30%',
   },
-  profileContainer: {
+  todayContainer: {
+    backgroundColor: colors.greyWhite,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    paddingVertical: 8,
+    opacity: 0.6,
+    marginVertical: 10,
+    alignSelf: 'center',
+  },
+  footer: {
+    backgroundColor: colors.white,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingLeft: 10,
+    paddingRight: 4,
+    paddingVertical: 10,
+    alignItems: 'center',
+  },
+  textInputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginVertical: 10,
-    marginLeft: 4,
+    width: '85%',
+    justifyContent: 'space-between',
+    borderWidth: 0.5,
+    paddingHorizontal: 10,
+    borderRadius: 12,
+    borderColor: colors.grey,
   },
-  profileImage: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
-    marginHorizontal: 10,
-  },
-  profileName: {
-    fontSize: fonts_Size.h5,
+  input: {
+    width: '70%',
   },
   iconContainer: {
-    flexDirection: 'row',
-    position: 'absolute',
-    right: 0,
-  },
-  iconBox: {
-    width: 40,
-    height: 40,
-    borderRadius: 12,
     backgroundColor: colors.lightGreen,
-    marginHorizontal: 6,
-    alignItems: 'center',
+    padding: 10,
+    borderRadius: 12,
     justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

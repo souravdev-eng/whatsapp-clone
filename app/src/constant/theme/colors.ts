@@ -1,9 +1,11 @@
 export const colors = {
   green: '#06E18D',
-  // lightGreen: '#e6fcf4',
-  black: '#000',
+  lightGreen: '#d3f6e0',
+  black: '#1a1a1a',
   white: '#F8F9FE',
-  lightGreen: '#cdf9e8',
+  darkWhite: '#F4F6F9',
   lightGrey: '#e2e5e9',
-  grey: '#909499',
+  grey: '#abacae',
+  greyWhite: '#dcdde0',
+  greyBlack: '#6D7580',
 };

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "type": "received",
+    "message": "Hello Sourav How are you?",
+    "time": "12:00"
+  },
+  {
+    "id": "2",
+    "type": "received",
+    "message": "Can you call me on your free time?",
+    "time": "12:10"
+  },
+  {
+    "id": "4",
+    "type": "send",
+    "message": "Hi, I am fine. Thanks for asking",
+    "time": "12:22"
+  },
+  {
+    "id": "6",
+    "type": "send",
+    "message": "Sure I will call you some time letter",
+    "time": "12:24"
+  },
+  {
+    "id": "3",
+    "type": "received",
+    "message": "ok thanks",
+    "time": "12:27"
+  },
+  {
+    "id": "10",
+    "type": "received",
+    "message": "Hello Sourav How are you?",
+    "time": "12:00"
+  },
+  {
+    "id": "11",
+    "type": "received",
+    "message": "Can you call me on your free time?",
+    "time": "12:10"
+  },
+  {
+    "id": "12",
+    "type": "send",
+    "message": "Hi, I am fine. Thanks for asking",
+    "time": "12:22"
+  },
+  {
+    "id": "13",
+    "type": "send",
+    "message": "Sure I will call you some time letter",
+    "time": "12:24"
+  },
+  {
+    "id": "14",
+    "type": "received",
+    "message": "ok thanks",
+    "time": "12:27"
+  }
+]
