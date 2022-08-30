@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   textInputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    width: '85%',
+    width: '82%',
     justifyContent: 'space-between',
     borderWidth: 0.5,
     paddingHorizontal: 10,
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     justifyContent: 'center',
     alignItems: 'center',
+    marginRight: 4,
   },
 });
 

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1",
+    "type": "received",
+    "message": {
+      "uri": "https://images.unsplash.com/photo-1657299143020-4f4bbf05174d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
+      "height": 380
+    },
+    "time": "12:00",
+    "payloadType": "image"
+  },
+  {
+    "id": "2",
+    "type": "received",
+    "message": "Can you call me on your free time?",
+    "time": "12:10",
+    "payloadType": "text"
+  },
+  {
+    "id": "4",
+    "type": "send",
+    "message": {
+      "uri": "https://images.unsplash.com/photo-1657299143020-4f4bbf05174d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
+      "height": 400
+    },
+    "time": "12:22",
+    "payloadType": "image"
+  },
+  {
+    "id": "6",
+    "type": "send",
+    "message": "Sure I will call you some time letter",
+    "time": "12:24",
+    "payloadType": "text"
+  },
+  {
+    "id": "3",
+    "type": "received",
+    "message": "ok thanks",
+    "time": "12:27",
+    "payloadType": "text"
+  },
+  {
+    "id": "10",
+    "type": "received",
+    "message": "Hello Sourav How are you?",
+    "time": "12:00",
+    "payloadType": "text"
+  },
+  {
+    "id": "11",
+    "type": "received",
+    "message": "Can you call me on your free time?",
+    "time": "12:10",
+    "payloadType": "text"
+  },
+  {
+    "id": "12",
+    "type": "send",
+    "message": "Hi, I am fine. Thanks for asking",
+    "time": "12:22",
+    "payloadType": "text"
+  },
+  {
+    "id": "13",
+    "type": "send",
+    "message": "Sure I will call you some time letter",
+    "time": "12:24",
+    "payloadType": "text"
+  },
+  {
+    "id": "14",
+    "type": "received",
+    "message": "ok thanks",
+    "time": "12:27",
+    "payloadType": "text"
+  }
+]

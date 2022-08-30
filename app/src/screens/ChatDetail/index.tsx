@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Image,
-  TouchableOpacity,
-  FlatList,
-  TextInput,
-} from 'react-native';
+import {View, TouchableOpacity, FlatList, TextInput} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
 
@@ -16,27 +9,27 @@ import {AppTextSemiBold, Row} from '../../styles/global.style';
 import ChatDetailHeader from '../../components/ChatDetailHeader';
 import SenderMessageCard from '../../components/SenderMessageCard';
 import ReceiverMessageCard from '../../components/ReceiverMessageCard';
-import CHAT_DATA from '../../assets/data/Message.data.json';
+// import CHAT_DATA from '../../assets/data/Message.data.json';
+import CHAT_DATA_V2 from '../../assets/data/Message.data_v2.json';
 
 const ChatDetailScreen = () => {
   return (
     <>
       <ChatDetailHeader />
-
       <FlatList
         style={styles.container}
-        contentContainerStyle={{paddingBottom: '30%'}}
+        contentContainerStyle={{paddingHorizontal: 4}}
         ListHeaderComponent={() => (
           <View style={styles.todayContainer}>
             <AppTextSemiBold>Today</AppTextSemiBold>
           </View>
         )}
-        data={CHAT_DATA}
+        data={CHAT_DATA_V2}
         renderItem={({item}) =>
           item.type === 'send' ? (
-            <SenderMessageCard message={item.message} time={item.time} />
+            <SenderMessageCard {...item} />
           ) : (
-            <ReceiverMessageCard message={item.message} time={item.time} />
+            <ReceiverMessageCard {...item} />
           )
         }
       />

@@ -4,13 +4,17 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native';
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './styles';
 import {AppText, AppTextBold} from '../../styles/global.style';
 
-const MessageCard = () => {
+interface Props {
+  onPress:()=>void;
+}
+
+const MessageCard:FC<Props> = ({onPress}) => {
   return (
-    <TouchableOpacity style={styles.chatCard} activeOpacity={0.7}>
+    <TouchableOpacity style={styles.chatCard} activeOpacity={0.7} onPress={onPress}>
       <TouchableWithoutFeedback>
         <Image
           source={{uri: 'https://randomuser.me/api/portraits/men/32.jpg'}}

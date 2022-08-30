@@ -11,11 +11,13 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import styles from './styles';
 import {colors} from '../../constant/theme/colors';
 import {AppTextSemiBold} from '../../styles/global.style';
+import {useNavigation} from '@react-navigation/native';
 
 const ChatDetailHeader = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.profileContainer}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.goBack()}>
         <Ionicons name="arrow-back" size={20} color={colors.green} />
       </TouchableOpacity>
       <TouchableWithoutFeedback>

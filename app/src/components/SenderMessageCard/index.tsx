@@ -1,19 +1,33 @@
 import React, {FC} from 'react';
-import {View} from 'react-native';
+import {View, Image} from 'react-native';
 import {AppText} from '../../styles/global.style';
 import styles from './styles';
 
 interface Props {
   message: any;
   time: string;
+  payloadType: any;
 }
 
-const SenderMessageCard: FC<Props> = ({message, time}) => {
+const SenderMessageCard: FC<Props> = ({message, time, payloadType}) => {
   return (
-    <View style={styles.container}>
-      <View style={{width: '85%'}}>
-        <AppText>{message}</AppText>
-      </View>
+    <View
+      style={payloadType === 'text' ? styles.container : styles.imgContainer}>
+      {payloadType === 'text' && (
+        <View style={{width: '85%'}}>
+          <AppText>{message}</AppText>
+        </View>
+      )}
+      {payloadType === 'image' && (
+        <Image
+          source={{uri: message.uri}}
+          style={{
+            width: '96%',
+            height: '80%',
+          }}
+          resizeMode="cover"
+        />
+      )}
       <AppText style={styles.time}>{time}</AppText>
     </View>
   );
